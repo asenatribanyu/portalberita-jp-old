@@ -24,3 +24,13 @@ Route::get('/categories', function () {
 Route::get('/login', function () {
     return view('login');
 });
+
+Route::get('/about', function () {
+    return view('about', [
+        "About" => "About.jpg",
+        "Vision" => "Vision.jpg",
+        "Documentation" => "Documentation.jpg",
+        "Photos" => "Photos.jpg",
+        
+    ]);
+});

@@ -17,9 +17,14 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/categories', function (){
+Route::get('/categories', function () {
     return view('categories');
 });
+
+Route::get('/login', function () {
+    return view('login');
+});
+
 Route::get('/about', function () {
     return view('about', [
         "About" => "About.jpg",

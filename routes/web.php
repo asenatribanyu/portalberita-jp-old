@@ -20,3 +20,12 @@ Route::get('/', function () {
 Route::get('/categories', function (){
     return view('categories');
 });
+Route::get('/about', function () {
+    return view('about', [
+        "About" => "About.jpg",
+        "Vision" => "Vision.jpg",
+        "Documentation" => "Documentation.jpg",
+        "Photos" => "Photos.jpg",
+        
+    ]);
+});

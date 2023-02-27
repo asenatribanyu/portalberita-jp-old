@@ -29,7 +29,7 @@ nav .navbar {
     padding: 0 30px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 nav .navbar .side-open {
@@ -38,6 +38,10 @@ nav .navbar .side-open {
     padding: 5px;
     cursor: pointer;
     display: none;
+}
+
+nav .navbar .logo {
+    margin-right: auto;
 }
 
 nav .navbar .logo a {
@@ -182,6 +186,14 @@ nav .navbar .logo a {
 }
 
 @media screen and (max-width: 768px) {
+    nav .navbar {
+        justify-content: space-between;
+    }
+
+    nav .navbar .logo {
+        margin-right: 0;
+    }
+
     nav .navbar .side-open {
         display: block;
     }

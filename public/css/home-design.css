@@ -75,7 +75,7 @@ nav .navbar .logo a {
     text-decoration: none;
 }
 
-.navlink li a::before {
+/* .navlink li a::before {
     content: "";
     position: absolute;
     left: 50%;
@@ -91,6 +91,10 @@ nav .navbar .logo a {
 
 .navlink li:hover a::before {
     opacity: 1;
+} */
+
+.navlink li a:hover {
+    color: rgb(192, 192, 192);
 }
 
 .searchToggle {

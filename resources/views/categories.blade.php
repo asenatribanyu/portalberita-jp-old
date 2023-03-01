@@ -56,41 +56,109 @@
                 </div>
             </div>
         </nav>
-        <div class="wrapper">
-            <h3>sort by :</h3>
-            <div class="dropdown">
-                <div class="select">
-                    <span class="selected"> Categories </span>
-                    <div class="caret"></div>
+        <div>
+            <div class="wrapper">
+                <h1 class="judul-halaman">Categories</h1>
+                <h3 class="sort">sort by :</h3>
+                <div class="dropdown">
+                    <div class="select">
+                        <span class="selected"> Categories </span>
+                        <div class="caret"></div>
+                    </div>
+                    <ul class="menu">
+                        <li>Categories 1</li>
+                        <li>Categories 2</li>
+                        <li>Categories 3</li>
+                        <li>Categories 4</li>
+                    </ul>
                 </div>
-                <ul class="menu">
-                    <li>Categories 1</li>
-                    <li>Categories 2</li>
-                    <li>Categories 3</li>
-                    <li>Categories 4</li>
-                </ul>
+                <div class="dropdown">
+                    <div class="select">
+                        <span class="selected"> Type </span>
+                        <div class="caret"></div>
+                    </div>
+                    <ul class="menu">
+                        <li>Photo</li>
+                        <li>Video</li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <div class="select">
+                        <span class="selected"> Date </span>
+                        <div class="caret"></div>
+                    </div>
+                    <ul class="menu">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                    </ul>
+                </div>
             </div>
-            <div class="dropdown">
-                <div class="select">
-                    <span class="selected"> Type </span>
-                    <div class="caret"></div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <img src="img/1.jpg" alt="" width="600" />
+                <div class="card-body">
+                    <span class="tag tag-blue">Japan</span>
+                    <a href="" class="judul">Lorem Ipsum</a>
+                    <p class="desc-card">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit.Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit.Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit.
+                    </p>
                 </div>
-                <ul class="menu">
-                    <li>Photo</li>
-                    <li>Video</li>
-                </ul>
+                <div class="card-footer">
+                    <div class="user">
+                        <div>
+                            <a href="" class="readmore">Read More</a>
+                            <small>DD/MM/YY</small>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="dropdown">
-                <div class="select">
-                    <span class="selected"> Date </span>
-                    <div class="caret"></div>
+            <div class="card">
+                <img src="img/1.jpg" alt="" width="600" />
+                <div class="card-body">
+                    <span class="tag tag-blue">Japan</span>
+                    <a href="" class="judul">Lorem Ipsum</a>
+                    <p class="desc-card">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit.Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit.Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit.
+                    </p>
                 </div>
-                <ul class="menu">
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                </ul>
+                <div class="card-footer">
+                    <div class="user">
+                        <div class="user-info">
+                            <a href="" class="readmore">Read More</a>
+                            <small>DD/MM/YY</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/1.jpg" alt="" width="600" />
+                <div class="card-body">
+                    <span class="tag tag-blue">Japan</span>
+                    <a href="" class="judul">Lorem Ipsum</a>
+                    <p class="desc-card">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit.Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit.Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <div class="user">
+                        <div class="user-info">
+                            <a href="" class="readmore">Read More</a>
+                            <small>DD/MM/YY</small>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 

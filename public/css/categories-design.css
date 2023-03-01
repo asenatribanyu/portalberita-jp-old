@@ -6,17 +6,9 @@
 }
 body {
     height: 100vh;
+    background-color: #fafafa;
 }
 
-h1 {
-    font-weight: 400;
-    font-size: 50px;
-}
-h3 {
-    font-weight: 400;
-    font-size: 16px;
-    margin-top: 20px;
-}
 nav {
     position: fixed;
     top: 0;
@@ -251,12 +243,25 @@ nav .navbar .logo a {
         margin: 20px;
     }
 }
+/* dropdown */
 .wrapper {
     display: flex;
     justify-content: flex-end;
     font-weight: 400;
     font-size: 16px;
     padding-top: 100px;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+.judul-halaman {
+    font-weight: 400;
+    font-size: 50px;
+    margin-right: 500px;
+}
+.sort {
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 20px;
 }
 .dropdown {
     min-width: 10em;
@@ -303,7 +308,7 @@ nav .navbar .logo a {
     border-radius: 0.5em;
     color: rgb(0, 0, 0);
     position: absolute;
-    top: 3em;
+    top: 2em;
     width: 200px;
     opacity: 0;
     display: none;
@@ -327,4 +332,93 @@ nav .navbar .logo a {
 .menu-open {
     display: block;
     opacity: 1;
+}
+/* card */
+.container {
+    margin-left: 200px;
+    margin-right: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin-block: 2rem;
+    gap: 2rem;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 311px;
+    height: 348px;
+    /* width: clamp(20rem, calc(20rem + 2vw), 22rem); */
+    overflow: hidden;
+    box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 1em;
+    background: #fafafa;
+}
+
+img {
+    width: 311px;
+    height: 175px;
+    display: block;
+    object-fit: cover;
+}
+.card-body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    /* gap: 0.5rem; */
+}
+.tag {
+    align-self: flex-start;
+    padding: 0.25em 0.75em;
+    border-radius: 1em;
+    font-size: 0.75rem;
+}
+.tag + .tag {
+    margin-left: 0.5em;
+}
+.tag-blue {
+    background: #d6d6d6;
+    color: #000000;
+}
+.judul {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #000000;
+}
+.readmore {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #000000;
+}
+.card p {
+    margin-top: 10px;
+    text-align: justify;
+}
+.card-body .desc-card {
+    width: 275px;
+    overflow: hidden;
+    height: 40px;
+}
+.card-footer {
+    display: flex;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    justify-content: space-between;
+    /* margin-top: auto; */
+}
+
+.user {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.user small {
+    margin-left: 120px;
+    justify-content: flex-end;
+    color: #666;
 }

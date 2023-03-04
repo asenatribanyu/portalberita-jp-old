@@ -34,3 +34,7 @@ Route::get('/about', function () {
         
     ]);
 });
+
+Route::get('/preview', function () {
+    return view('preview');
+});

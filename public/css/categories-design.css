@@ -353,7 +353,7 @@ nav .navbar .logo a {
     overflow: hidden;
     box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
     border-radius: 1em;
-    background: #fafafa;
+    /* background: #fafafa; */
 }
 
 img {

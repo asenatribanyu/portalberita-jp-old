@@ -7,6 +7,7 @@
 
         <link rel="stylesheet" href="css/home-design.css" />
 
+        <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -14,10 +15,12 @@
             rel="stylesheet"
         />
 
+        <!-- Box Icons -->
         <link
             href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
             rel="stylesheet"
         />
+
         <title>Heiwa</title>
     </head>
     <body>
@@ -58,6 +61,116 @@
                 </div>
             </div>
         </nav>
+
+        <div class="container-carousel">
+            <div class="carousel">
+                <div class="carousel-slides">
+                    <img src="img/img-slider-1.jpg" alt="" />
+                    <div class="carousel-info">
+                        <span>Tag</span>
+                        <h2>Lorem ipsum dolor sit amet. 1</h2>
+                        <small>DD/MM/YYYY</small>
+                    </div>
+                    <div class="carousel-button">
+                        <i class="bx bx-chevron-left carousel-nav-left"></i>
+                        <i class="bx bx-chevron-right carousel-nav-right"></i>
+                    </div>
+                </div>
+                <div class="carousel-slides">
+                    <img src="img/img-slider-2.jpg" alt="" />
+                    <div class="carousel-info">
+                        <span>Tag</span>
+                        <h2>Lorem ipsum dolor sit amet. 2</h2>
+                        <small>DD/MM/YYYY</small>
+                    </div>
+                    <div class="carousel-button">
+                        <i class="bx bx-chevron-left carousel-nav-left"></i>
+                        <i class="bx bx-chevron-right carousel-nav-right"></i>
+                    </div>
+                </div>
+                <div class="carousel-slides">
+                    <img src="img/img-slider-3.jpg" alt="" />
+                    <div class="carousel-info">
+                        <span>Tag</span>
+                        <h2>Lorem ipsum dolor sit amet. 3</h2>
+                        <small>DD/MM/YYYY</small>
+                    </div>
+                    <div class="carousel-button">
+                        <i class="bx bx-chevron-left carousel-nav-left"></i>
+                        <i class="bx bx-chevron-right carousel-nav-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-card">
+            <div class="card-wrapper">
+                <div class="card">
+                    <img src="img/1.jpg" alt="" width="600" />
+                    <div class="card-body">
+                        <span class="tag tag-blue">Japan</span>
+                        <a href="" class="judul">Lorem Ipsum</a>
+                        <p class="desc-card">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit.Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit.Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="user">
+                            <div>
+                                <a href="" class="readmore">Read More</a>
+                                <small>DD/MM/YY</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/1.jpg" alt="" width="600" />
+                    <div class="card-body">
+                        <span class="tag tag-blue">Japan</span>
+                        <a href="" class="judul">Lorem Ipsum</a>
+                        <p class="desc-card">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit.Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit.Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="user">
+                            <div>
+                                <a href="" class="readmore">Read More</a>
+                                <small>DD/MM/YY</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/1.jpg" alt="" width="600" />
+                    <div class="card-body">
+                        <span class="tag tag-blue">Japan</span>
+                        <a href="" class="judul">Lorem Ipsum</a>
+                        <p class="desc-card">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit.Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit.Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="user">
+                            <div>
+                                <a href="" class="readmore">Read More</a>
+                                <small>DD/MM/YY</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <script src="js/home-script.js"></script>
     </body>
 </html>

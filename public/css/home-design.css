@@ -3,12 +3,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Quicksand", sans-serif;
+    border: 1px solid yellow;
 }
 
-body {
-    height: 100vh;
-}
-
+/* Navigation Bar */
 nav {
     position: fixed;
     top: 0;
@@ -74,24 +72,6 @@ nav .navbar .logo a {
     padding: 10px;
     text-decoration: none;
 }
-
-/* .navlink li a::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    height: 6px;
-    width: 6px;
-    border-radius: 50%;
-    background-color: white;
-    opacity: 0;
-    transition: all 0.3s ease;
-}
-
-.navlink li:hover a::before {
-    opacity: 1;
-} */
 
 .navlink li a:hover {
     color: rgb(192, 192, 192);
@@ -188,7 +168,164 @@ nav .navbar .logo a {
     font-size: 16px;
     cursor: pointer;
 }
+/* End of Navigation Bar */
 
+/* Carousel */
+.container-carousel {
+    width: 1250px;
+    margin: auto;
+}
+
+.carousel {
+    margin-top: 75px;
+    position: relative;
+}
+
+.carousel-slides {
+    margin: auto;
+    position: relative;
+    width: 1030px;
+    height: 325px;
+    display: none;
+}
+
+.carousel-slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.carousel-selected {
+    display: block;
+}
+
+.carousel-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 1030px;
+    height: 112px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 20px 50px 0 50px;
+}
+
+.carousel-button {
+    position: relative;
+    cursor: pointer;
+}
+
+.carousel-button .carousel-nav-left,
+.carousel-nav-right {
+    position: absolute;
+    font-size: 40px;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.carousel-button .carousel-nav-left {
+    bottom: 140px;
+    left: 10px;
+}
+
+.carousel-button .carousel-nav-right {
+    bottom: 140px;
+    right: 10px;
+}
+/* End of Carousel */
+
+/* Card */
+.container-card {
+    margin: auto;
+    width: 1250px;
+}
+
+.card-wrapper {
+    width: 1030px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-block: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 311px;
+    height: 348px;
+    overflow: hidden;
+    border-radius: 1em;
+}
+
+img {
+    width: 311px;
+    height: 175px;
+    display: block;
+    object-fit: cover;
+}
+.card-body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.tag {
+    align-self: flex-start;
+    padding: 0.25em 0.75em;
+    border-radius: 1em;
+    font-size: 0.75rem;
+}
+.tag + .tag {
+    margin-left: 0.5em;
+}
+.tag-blue {
+    background: #d6d6d6;
+    color: #000000;
+}
+.judul {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #000000;
+}
+.readmore {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #000000;
+}
+.card p {
+    margin-top: 10px;
+    text-align: justify;
+}
+.card-body .desc-card {
+    width: 275px;
+    overflow: hidden;
+    height: 40px;
+}
+.card-footer {
+    display: flex;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    justify-content: space-between;
+}
+
+.user {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.user small {
+    margin-left: 120px;
+    justify-content: flex-end;
+    color: #666;
+}
+/* End of Card */
+
+/* Responsive */
 @media screen and (max-width: 768px) {
     nav .navbar {
         justify-content: space-between;
@@ -247,3 +384,4 @@ nav .navbar .logo a {
         margin: 20px;
     }
 }
+/* End of Responsive */

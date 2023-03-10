@@ -62,7 +62,7 @@
             </div>
         </nav>
 
-        <div class="container-carousel">
+        <div class="main-container">
             <div class="carousel">
                 <div class="carousel-slides">
                     <img src="img/img-slider-1.jpg" alt="" />
@@ -101,73 +101,70 @@
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="container-card">
             <div class="card-wrapper">
                 <div class="card">
-                    <img src="img/1.jpg" alt="" width="600" />
-                    <div class="card-body">
-                        <span class="tag tag-blue">Japan</span>
-                        <a href="" class="judul">Lorem Ipsum</a>
-                        <p class="desc-card">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit.Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit.Lorem ipsum dolor sit amet,
-                            consectetur adipisicing elit.
-                        </p>
+                    <div class="card-image">
+                        <img src="img/2.jpg" alt="" />
                     </div>
-                    <div class="card-footer">
-                        <div class="user">
-                            <div>
-                                <a href="" class="readmore">Read More</a>
-                                <small>DD/MM/YY</small>
-                            </div>
+                    <div class="card-info">
+                        <span>Tag</span>
+                        <div class="card-title">
+                            <a href="/"
+                                >Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod.</a
+                            >
+                        </div>
+                        <div class="card-footer">
+                            <a href="/">Read More &#8594;</a>
+                            <small>DD/MM/YY</small>
                         </div>
                     </div>
                 </div>
+
                 <div class="card">
-                    <img src="img/1.jpg" alt="" width="600" />
-                    <div class="card-body">
-                        <span class="tag tag-blue">Japan</span>
-                        <a href="" class="judul">Lorem Ipsum</a>
-                        <p class="desc-card">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit.Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit.Lorem ipsum dolor sit amet,
-                            consectetur adipisicing elit.
-                        </p>
+                    <div class="card-image">
+                        <img src="img/1.jpg" alt="" />
                     </div>
-                    <div class="card-footer">
-                        <div class="user">
-                            <div>
-                                <a href="" class="readmore">Read More</a>
-                                <small>DD/MM/YY</small>
-                            </div>
+                    <div class="card-info">
+                        <span>Tag</span>
+                        <div class="card-title">
+                            <a href="/"
+                                >Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod.</a
+                            >
+                        </div>
+                        <div class="card-footer">
+                            <a href="">Read More &#8594;</a>
+                            <small>DD/MM/YY</small>
                         </div>
                     </div>
                 </div>
+
                 <div class="card">
-                    <img src="img/1.jpg" alt="" width="600" />
-                    <div class="card-body">
-                        <span class="tag tag-blue">Japan</span>
-                        <a href="" class="judul">Lorem Ipsum</a>
-                        <p class="desc-card">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit.Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit.Lorem ipsum dolor sit amet,
-                            consectetur adipisicing elit.
-                        </p>
+                    <div class="card-image">
+                        <img src="img/4.jpg" alt="" />
                     </div>
-                    <div class="card-footer">
-                        <div class="user">
-                            <div>
-                                <a href="" class="readmore">Read More</a>
-                                <small>DD/MM/YY</small>
-                            </div>
+                    <div class="card-info">
+                        <span>Tag</span>
+                        <div class="card-title">
+                            <a href="/"
+                                >Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod.</a
+                            >
+                        </div>
+                        <div class="card-footer">
+                            <a href="">Read More &#8594;</a>
+                            <small>DD/MM/YY</small>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="break-point">
+                <hr />
+            </div>
+            <div class="latest-articles">
+                <h1>LATEST ARTICLES</h1>
             </div>
         </div>
 

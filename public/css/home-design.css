@@ -1,10 +1,36 @@
+/* General */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Quicksand", sans-serif;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
 }
+
+body {
+    height: 200vh;
+    background-color: #fafafa;
+}
+
+.main-container {
+    width: 1250px;
+    margin: auto;
+}
+/* End of General */
+
+/* Break Point */
+.break-point {
+    margin: auto;
+    width: 1030px;
+}
+
+hr {
+    margin: 50px auto;
+    height: 1px;
+    border-width: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+/* End of Breakpoint */
 
 /* Navigation Bar */
 nav {
@@ -13,8 +39,9 @@ nav {
     left: 0;
     height: 70px;
     width: 100%;
-    background-color: black;
+    background-color: white;
     z-index: 100;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 nav .navbar {
@@ -22,7 +49,7 @@ nav .navbar {
     height: 100%;
     max-width: 1250px;
     width: 100%;
-    background-color: black;
+    background-color: white;
     margin: 0 auto;
     padding: 0 30px;
     display: flex;
@@ -31,7 +58,7 @@ nav .navbar {
 }
 
 nav .navbar .side-open {
-    color: white;
+    color: black;
     font-size: 25px;
     padding: 5px;
     cursor: pointer;
@@ -45,7 +72,7 @@ nav .navbar .logo {
 nav .navbar .logo a {
     font-size: 25px;
     font-weight: 500;
-    color: white;
+    color: black;
     text-decoration: none;
     letter-spacing: 0.1em;
 }
@@ -68,13 +95,13 @@ nav .navbar .logo a {
     position: relative;
     font-size: 15px;
     font-weight: 400;
-    color: white;
+    color: black;
     padding: 10px;
     text-decoration: none;
 }
 
 .navlink li a:hover {
-    color: rgb(192, 192, 192);
+    color: rgb(127, 127, 127);
 }
 
 .searchToggle {
@@ -88,7 +115,7 @@ nav .navbar .logo a {
 
 .searchToggle i {
     position: absolute;
-    color: white;
+    color: black;
     font-size: 16px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -122,7 +149,7 @@ nav .navbar .logo a {
     display: flex;
     align-items: center;
     background-color: black;
-    padding: 2px;
+    padding: 1px;
     border-radius: 6px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
     opacity: 0;
@@ -171,13 +198,8 @@ nav .navbar .logo a {
 /* End of Navigation Bar */
 
 /* Carousel */
-.container-carousel {
-    width: 1250px;
-    margin: auto;
-}
-
 .carousel {
-    margin-top: 75px;
+    margin-top: 95px;
     position: relative;
 }
 
@@ -207,6 +229,7 @@ nav .navbar .logo a {
     width: 1030px;
     height: 112px;
     background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 0 0 10px 10px;
     color: white;
     padding: 20px 50px 0 50px;
 }
@@ -237,93 +260,86 @@ nav .navbar .logo a {
 /* End of Carousel */
 
 /* Card */
-.container-card {
-    margin: auto;
-    width: 1250px;
-}
-
 .card-wrapper {
     width: 1030px;
     margin: auto;
     display: flex;
     justify-content: space-between;
-    margin-block: 10px;
+    margin-block: 25px;
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
+    position: relative;
     width: 311px;
-    height: 348px;
-    overflow: hidden;
-    border-radius: 1em;
+    height: 277px;
 }
 
-img {
-    width: 311px;
+.card-image {
+    width: 100%;
     height: 175px;
-    display: block;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    border-radius: 10px;
 }
-.card-body {
-    padding: 1rem;
+
+.card .card-info {
+    width: 100%;
+    height: 102px;
+}
+
+.card .card-info span {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    padding-top: 2px;
+    width: 45px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #d9d9d9;
+    font-size: 12px;
+    margin-top: 7px;
 }
-.tag {
-    align-self: flex-start;
-    padding: 0.25em 0.75em;
-    border-radius: 1em;
-    font-size: 0.75rem;
-}
-.tag + .tag {
-    margin-left: 0.5em;
-}
-.tag-blue {
-    background: #d6d6d6;
-    color: #000000;
-}
-.judul {
-    text-decoration: none;
-    font-size: 24px;
-    font-weight: 600;
-    margin-top: 10px;
-    color: #000000;
-}
-.readmore {
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 600;
-    margin-top: 10px;
-    color: #000000;
-}
-.card p {
-    margin-top: 10px;
-    text-align: justify;
-}
-.card-body .desc-card {
-    width: 275px;
-    overflow: hidden;
-    height: 40px;
-}
-.card-footer {
+
+.card .card-footer {
     display: flex;
-    padding-left: 1rem;
-    padding-right: 1rem;
     justify-content: space-between;
 }
 
-.user {
-    display: flex;
-    gap: 0.5rem;
+.card-title {
+    font-weight: bold;
+    margin-top: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    height: 45px;
 }
 
-.user small {
-    margin-left: 120px;
-    justify-content: flex-end;
-    color: #666;
+.card-title a {
+    color: black;
+    text-decoration: none;
+}
+
+.card-footer a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.card-footer small {
+    margin-top: 2.5px;
+    font-size: 10px;
 }
 /* End of Card */
+
+/* Latest Articles */
+.latest-articles {
+    margin: 25px auto;
+    width: 1030px;
+}
+/* End of Latest Articles */
 
 /* Responsive */
 @media screen and (max-width: 768px) {
@@ -346,7 +362,7 @@ img {
         left: -100%;
         top: 0;
         padding: 20px;
-        background-color: black;
+        background-color: white;
         z-index: 100;
         transition: all 0.4s ease;
     }
@@ -370,7 +386,7 @@ img {
     }
 
     .logo-toggle .side-close {
-        color: white;
+        color: black;
         font-size: 24px;
     }
 

@@ -120,30 +120,25 @@
                 </p>
                 
             </div>
-
-            {{-- <div class="about-img1">
-                <img src="img/2.jpg" alt="sakura"class="foto2">
-                <img src="img/2b.jpg" alt="sakura"class="foto2b">
-            </div> --}}
         </div>
         
         <hr>
 
         <div class="row3">
-
             <div class="content">
                 <h3> Documentation</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                {{-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
                     Ipsa dolorum eius, odit tenetur vitae cumque doloremque 
                     ipsam voluptas est. Qui, accusamus fuga. Error, officia 
                     adipisci eaque eos reprehenderit ratione modi ex quasi est 
                     dolores non temporibus expedita itaque libero ipsa ipsam 
                     deleniti possimus, perferendis nemo quaerat officiis. Eveniet, 
                     eum atque.
-                </p>
-                
+                </p> --}}  
             </div>
-
+            <div class="about-img3">
+                <img src="video/3.jpg" alt="sakura"class="video">
+            </div>
         </div>
 
         <hr>

@@ -36,6 +36,13 @@ h1 {
     width:10px;
     height:5px;
 }
+
+.about-img3{
+    position: relative;
+    width:10px;
+    height:5px;
+}
+
 .foto1, .foto2, .foto4{ 
     position: absolute;
     z-index: 1;
@@ -66,11 +73,24 @@ h1 {
 
 
 .about .row1 .about-img, 
-.about .row3, 
+/* .about .row3 .about-img3,  */
 .about .row4 .about-img4{
     flex: 0 0 60rem;
     margin-top: 5rem;
 }
+
+.about .row3 .about-img3{
+    flex: 500 250 0;
+    margin: 0;
+   
+}
+
+.about .row3{
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    
+}
+
 .about .row2 .about-img1{
     flex: 0 0 60rem;
     margin-top: 0rem;
@@ -79,7 +99,7 @@ h1 {
 
 .about .row1 .about-img img, 
 .about .row2 .about-img1 img, 
-.about .row3 .about-img img, 
+/* .about .row3 .about-img video,  */
 .about .row4 .about-img4 img{
     width: 10%;
     height: 10rem;
@@ -87,9 +107,21 @@ h1 {
     object-position: center;
 }
 
+.about .row3 .about-img3 video{
+    width: 50%;
+    height: 25rem;
+    margin-top: 4rem;
+}
+
+
 .about .row1 .content, 
 .about .row3 .content, 
 .about .row4 .content{
+    flex: 1 1 60rem;
+    padding: 1 1rem;
+    margin-right: 50px;
+}
+.about .row3 .content{
     flex: 1 1 60rem;
     padding: 1 1rem;
     margin-right: 50px;
@@ -119,6 +151,13 @@ h1 {
    
     
 }
+.about .row3 .content h3{
+    font-size: 2.5rem;
+    padding-bottom: 70px;
+    margin: 10px;
+    margin-left: 1rem;
+    
+}
 
 .about .row1 .content p,
 .about .row3 .content p,
@@ -132,6 +171,7 @@ h1 {
     line-height: 1.5;
     text-align: justify;
 }
+
 .about .row2 .content p{
     position: relative;
     margin-left: 10px;

@@ -55,7 +55,7 @@ document.querySelectorAll(".carousel").forEach((carousel) => {
 
     slideInterval = setInterval(() => {
         carouselNext[2].click();
-    }, 2000);
+    }, 3000);
 
     carousel.addEventListener("mouseover", () => {
         clearInterval(slideInterval);
@@ -64,7 +64,7 @@ document.querySelectorAll(".carousel").forEach((carousel) => {
     carousel.addEventListener("mouseout", () => {
         slideInterval = setInterval(() => {
             carouselNext[2].click();
-        }, 2000);
+        }, 3000);
     });
 });
 // End of Carousel

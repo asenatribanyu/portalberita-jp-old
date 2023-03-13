@@ -11,7 +11,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
             rel="stylesheet"
         />
 
@@ -112,7 +112,8 @@
                         <div class="card-title">
                             <a href="/"
                                 >Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod.</a
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.</a
                             >
                         </div>
                         <div class="card-footer">
@@ -121,7 +122,77 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
+            <div class="break-point-horizontal">
+                <hr />
+            </div>
+
+            <div class="header-articles">
+                <h1>LATEST ARTICLES</h1>
+                <a href="/">View All Articles &#8594;</a>
+            </div>
+
+            <div class="card-wrapper card-wrapper-latest">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/2b.jpg" alt="" />
+                    </div>
+                    <div class="card-info">
+                        <span>Tag</span>
+                        <div class="card-title">
+                            <a href="/"
+                                >Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.</a
+                            >
+                        </div>
+                        <div class="card-desc">
+                            Facilisis volutpat est velit egestas dui id ornare.
+                            Scelerisque felis imperdiet proin fermentum leo vel
+                            orci porta. In hac habitasse platea dictumst quisque
+                            sagittis.
+                        </div>
+                        <div class="card-footer">
+                            <a href="/">Read More &#8594;</a>
+                            <small>DD/MM/YY</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="break-point-horizontal">
+                <hr />
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <div class="hero-wrapper">
+                <img src="img/img-slider-1.jpg" alt="" />
+                <div class="hero-info">
+                    <div class="hero-desc">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Metus dictum at tempor commodo
+                            ullamcorper a lacus vestibulum.
+                        </p>
+                        <a href="/">LEARN MORE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-container">
+            <div class="break-point-horizontal">
+                <hr />
+            </div>
+
+            <div class="header-articles">
+                <h1>ARTICLES</h1>
+                <a href="/">View All Articles &#8594;</a>
+            </div>
+
+            <div class="card-wrapper card-wrapper-all-articles">
                 <div class="card">
                     <div class="card-image">
                         <img src="img/1.jpg" alt="" />
@@ -131,16 +202,28 @@
                         <div class="card-title">
                             <a href="/"
                                 >Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod.</a
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.</a
                             >
                         </div>
                         <div class="card-footer">
-                            <a href="">Read More &#8594;</a>
+                            <a href="/">Read More &#8594;</a>
                             <small>DD/MM/YY</small>
                         </div>
                     </div>
                 </div>
+            </div>
 
+            <div class="break-point-horizontal">
+                <hr />
+            </div>
+
+            <div class="header-articles">
+                <h1>VIDEOS</h1>
+                <a href="/">View All Videos &#8594;</a>
+            </div>
+
+            <div class="card-wrapper card-wrapper-videos">
                 <div class="card">
                     <div class="card-image">
                         <img src="img/4.jpg" alt="" />
@@ -150,23 +233,47 @@
                         <div class="card-title">
                             <a href="/"
                                 >Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod.</a
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.</a
                             >
                         </div>
                         <div class="card-footer">
-                            <a href="">Read More &#8594;</a>
+                            <a href="/">Read More &#8594;</a>
                             <small>DD/MM/YY</small>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="break-point">
+
+            <div class="break-point-horizontal">
                 <hr />
             </div>
-            <div class="latest-articles">
-                <h1>LATEST ARTICLES</h1>
+
+            <div class="header-articles">
+                <h1>PHOTOS</h1>
+                <a href="/">View All Photos &#8594;</a>
+            </div>
+
+            <div class="image-gallery-wrapper">
+                <div class="image-1"><img src="" alt="" /></div>
+                <div class="image-2"><img src="" alt="" /></div>
+                <div class="image-3"><img src="" alt="" /></div>
+                <div class="image-4"><img src="" alt="" /></div>
+                <div class="image-5"><img src="" alt="" /></div>
+                <div class="image-6"><img src="" alt="" /></div>
+                <div class="image-7"><img src="" alt="" /></div>
+                <div class="image-8"><img src="" alt="" /></div>
+                <div class="image-9"><img src=""" alt="" /></div>
             </div>
         </div>
+        <footer>
+            <div class="main-container">
+                <div class="footer-info">
+                    <small>2023 &#169; Name.</small>
+                    <small>Crafted With <i class="bx bxs-heart"></i></small>
+                </div>
+            </div>
+        </footer>
 
         <script src="js/home-script.js"></script>
     </body>

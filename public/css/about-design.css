@@ -1,6 +1,6 @@
-* {
+/* * {
     border: 1px solid rgb(170, 170, 30);
-}
+} */
 
 body{
     font-family: 'Quicksand', sans-serif;
@@ -321,13 +321,11 @@ hr {
     margin-left: 50px;
 }
 
-.about .row1 .content h3,  
-/* .about .row3 .content h3,  */
-.about .row4 .content h3{
+.about .row1 .content h3{
     font-size: 2.5rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
-    margin-left: 12.5rem;
+    margin-left: 28rem;
 }
 
 .about .row2 .content h3{
@@ -339,19 +337,25 @@ hr {
 }
 .about .row3 .content h3{
     font-size: 2.5rem;
-    padding-bottom: 70px;
+    padding-bottom: 50px;
     margin: 10px;
-    margin-left: 1rem;
+    margin-left: 5rem;
     
 }
 
-.about .row1 .content p,
-/* .about .row3 .content p, */
-.about .row4 .content p{
-    position: relative;
-    margin-left: 200px;
-    /* margin-right: 300px; */
+.about .row4 .content h3{
+    font-size: 2.5rem;
+    margin-top: 2rem;
     margin-bottom: 1rem;
+    margin-left: 22rem;
+}
+
+.about .row1 .content p{
+    position: relative;
+    margin-left: 450px;
+    /* margin-right: 300px; */
+    margin-bottom: 20rem;
+    max-width: 30rem;
     font-size: 1rem;
     font-weight: 1;
     line-height: 1.5;
@@ -362,7 +366,8 @@ hr {
     position: relative;
     margin-left: 10px;
     margin-right: 420px;
-    margin-bottom: 2rem;
+    margin-bottom: 20rem;
+    max-width: 30rem;
     font-size: 1rem;
     font-weight: 1;
     line-height: 1.5;
@@ -373,14 +378,25 @@ hr {
 .about .row3 .content p{
     position: relative;
     margin-left: 20px;
-    margin-right: 50px;
+    margin-right: 1px;
     margin-bottom: 1rem;
     font-size: 1rem;
     font-weight: 1;
     line-height: 1.5;
     text-align: justify;
 }
-    
+
+.about .row4 .content p{
+    position: relative;
+    margin-left: 350px;
+    /* margin-right: 300px; */
+    margin-bottom: 20rem;
+    max-width: 30rem;
+    font-size: 1rem;
+    font-weight: 1;
+    line-height: 1.5;
+    text-align: justify;
+}
 
 
 

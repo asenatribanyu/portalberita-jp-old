@@ -69,7 +69,7 @@
                 {{-- </div> --}}
                 
                 <div class="content">
-                    <h3> About</h3>
+                    <h3> ABOUT</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
                         Ipsa dolorum eius, odit tenetur vitae cumque doloremque 
                         ipsam voluptas est. Qui, accusamus fuga. Error, officia 
@@ -87,7 +87,7 @@
                     <img src="img/2b.jpg" alt="sakura"class="foto2b">
                 </div>
                 <div class="content">
-                    <h3> Vision</h3>
+                    <h3> VISION</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
                         Ipsa dolorum eius, odit tenetur vitae cumque doloremque 
                         ipsam voluptas est. Qui, accusamus fuga. Error, officia 
@@ -102,7 +102,7 @@
             <hr>
             <div class="row3">
                 <div class="content">
-                    <h3> Documentation</h3>
+                    <h3> DOCUMENTATION</h3>
                 </div>
                 <div class="about-img3">
                     <img src="img/video.jpg" alt="sakura"class="video">
@@ -114,7 +114,7 @@
                     <img src="img/4.jpg" alt="sakura"class="foto4">
                 </div>
                 <div class="content">
-                    <h3> Photos</h3>
+                    <h3> PHOTOS</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
                         Ipsa dolorum eius, odit tenetur vitae cumque doloremque 
                         ipsam voluptas est. Qui, accusamus fuga. Error, officia 

@@ -4,19 +4,27 @@
     box-sizing: border-box;
     font-family: "Quicksand", sans-serif;
 }
+
 body {
-    height: 100vh;
     background-color: #fafafa;
 }
 
+.main-container {
+    width: 1250px;
+    margin: auto;
+    padding-top: 95px;
+}
+
+/* Navigation Bar */
 nav {
     position: fixed;
     top: 0;
     left: 0;
     height: 70px;
     width: 100%;
-    background-color: black;
+    background-color: white;
     z-index: 100;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 nav .navbar {
@@ -24,7 +32,7 @@ nav .navbar {
     height: 100%;
     max-width: 1250px;
     width: 100%;
-    background-color: black;
+    background-color: white;
     margin: 0 auto;
     padding: 0 30px;
     display: flex;
@@ -33,7 +41,7 @@ nav .navbar {
 }
 
 nav .navbar .side-open {
-    color: white;
+    color: black;
     font-size: 25px;
     padding: 5px;
     cursor: pointer;
@@ -47,12 +55,12 @@ nav .navbar .logo {
 nav .navbar .logo a {
     font-size: 25px;
     font-weight: 500;
-    color: white;
+    color: black;
     text-decoration: none;
     letter-spacing: 0.1em;
 }
 
-.menu-cat .logo-toggle {
+.menu .logo-toggle {
     display: none;
 }
 
@@ -69,28 +77,14 @@ nav .navbar .logo a {
 .navlink li a {
     position: relative;
     font-size: 15px;
-    font-weight: 400;
-    color: white;
+    font-weight: 500;
+    color: black;
     padding: 10px;
     text-decoration: none;
 }
 
-.navlink li a::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    height: 6px;
-    width: 6px;
-    border-radius: 50%;
-    background-color: white;
-    opacity: 0;
-    transition: all 0.3s ease;
-}
-
-.navlink li:hover a::before {
-    opacity: 1;
+.navlink li a:hover {
+    color: rgb(127, 127, 127);
 }
 
 .searchToggle {
@@ -104,7 +98,7 @@ nav .navbar .logo a {
 
 .searchToggle i {
     position: absolute;
-    color: white;
+    color: black;
     font-size: 16px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -138,7 +132,7 @@ nav .navbar .logo a {
     display: flex;
     align-items: center;
     background-color: black;
-    padding: 2px;
+    padding: 1px;
     border-radius: 6px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
     opacity: 0;
@@ -184,95 +178,42 @@ nav .navbar .logo a {
     font-size: 16px;
     cursor: pointer;
 }
+/* End of Navigation Bar */
 
-@media screen and (max-width: 768px) {
-    nav .navbar {
-        justify-content: space-between;
-    }
-
-    nav .navbar .logo {
-        margin-right: 0;
-    }
-
-    nav .navbar .side-open {
-        display: block;
-    }
-
-    .menu-cat {
-        position: fixed;
-        height: 100%;
-        width: 320px;
-        left: -100%;
-        top: 0;
-        padding: 20px;
-        background-color: black;
-        z-index: 100;
-        transition: all 0.4s ease;
-    }
-
-    nav.active .menu-cat {
-        left: -0%;
-    }
-
-    nav.active .navbar .navLogo a {
-        opacity: 0;
-        transition: all 0.3s ease;
-    }
-
-    .menu-cat .logo-toggle {
-        display: block;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        cursor: pointer;
-    }
-
-    .logo-toggle .side-close {
-        color: white;
-        font-size: 24px;
-    }
-
-    .navbar .navlink {
-        flex-direction: column;
-        padding-top: 30px;
-    }
-
-    .navlink li a {
-        display: block;
-        margin: 20px;
-    }
-}
-/* dropdown */
-.wrapper {
+/* Header Categories */
+.header-categories {
     display: flex;
-    justify-content: flex-end;
-    font-weight: 400;
-    font-size: 16px;
-    padding-top: 100px;
-    margin-left: 75px;
-    margin-right: 75px;
+    justify-content: space-between;
 }
-.judul-halaman {
-    font-weight: 400;
+
+.header-categories h1 {
+    border-right: 1px solid rgba(0, 0, 0, 0.35);
+    padding-right: 15px;
     font-size: 50px;
-    margin-right: 500px;
-}
-.sort {
     font-weight: 400;
-    font-size: 16px;
-    margin-top: 20px;
 }
-.dropdown {
+
+.categories-wrapper {
+    font-size: 16px;
+    display: flex;
+}
+
+.categories-wrapper small {
+    margin: auto;
+}
+/* End of Header Categories */
+
+/* Sort */
+.dropdown-categories {
     min-width: 10em;
     position: relative;
     margin: 10px;
 }
-.dropdown * {
+.dropdown-categories * {
     width: 200px;
     box-sizing: border-box;
 }
-.select {
+.select-categories {
     background: none;
     color: rgb(0, 0, 0);
     display: flex;
@@ -284,12 +225,11 @@ nav .navbar .logo a {
     cursor: pointer;
     transition: background 0.4s;
 }
-.select-clicked {
+.select-categories-clicked {
     border: 2px solid;
-    /*box-shadow: 0 0 0.8em #ff0000;*/
 }
 
-.caret {
+.caret-categories {
     width: 0;
     height: 0;
     border-left: 5px solid transparent;
@@ -297,10 +237,12 @@ nav .navbar .logo a {
     border-top: 5px solid #000000;
     transition: 0.3s;
 }
-.caret-rotate {
+
+.caret-categories-rotate {
     transform: rotate(180deg);
 }
-.menu {
+
+.menu-categories {
     list-style: none;
     padding: 0.2em 0em;
     background: #e6e6e6;
@@ -315,110 +257,211 @@ nav .navbar .logo a {
     transition: 0.2s;
     z-index: 1;
 }
-.menu li {
+
+.menu-categories li {
     padding: 0.1em 0.5em;
     margin: 0.3em 0;
     border-radius: 0.5em;
     cursor: pointer;
 }
-.menu li:hover {
+
+.menu-categories li:hover {
     background: #dadada;
 }
+
 .active {
     background: #000000;
     color: #fafafa;
 }
 
-.menu-open {
+.menu-categories-open {
     display: block;
     opacity: 1;
 }
-/* card */
-.container {
-    margin-left: 200px;
-    margin-right: 200px;
+/* End of Sort */
+
+/* Categories Card */
+.card-wrapper-categories {
+    width: 1030px;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    max-width: 1200px;
-    margin-block: 2rem;
-    gap: 2rem;
-}
-.card {
-    display: flex;
-    flex-direction: column;
-    width: 311px;
-    height: 348px;
-    /* width: clamp(20rem, calc(20rem + 2vw), 22rem); */
-    overflow: hidden;
-    box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
-    border-radius: 1em;
-    /* background: #fafafa; */
-}
-
-img {
-    width: 311px;
-    height: 175px;
-    display: block;
-    object-fit: cover;
-}
-.card-body {
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    /* gap: 0.5rem; */
-}
-.tag {
-    align-self: flex-start;
-    padding: 0.25em 0.75em;
-    border-radius: 1em;
-    font-size: 0.75rem;
-}
-.tag + .tag {
-    margin-left: 0.5em;
-}
-.tag-blue {
-    background: #d6d6d6;
-    color: #000000;
-}
-.judul {
-    text-decoration: none;
-    font-size: 24px;
-    font-weight: 600;
-    margin-top: 10px;
-    color: #000000;
-}
-.readmore {
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 600;
-    margin-top: 10px;
-    color: #000000;
-}
-.card p {
-    margin-top: 10px;
-    text-align: justify;
-}
-.card-body .desc-card {
-    /* width: 275px;
-    overflow: hidden;
-    height: 40px; */
-}
-.card-footer {
-    display: flex;
-    padding-left: 1rem;
-    padding-right: 1rem;
     justify-content: space-between;
-    /* margin-top: auto; */
 }
 
-.user {
+.card-categories {
+    position: relative;
+    width: 311px;
+    height: 277px;
+    margin-block: 50px;
+}
+
+.card-image-categories {
+    width: 100%;
+    height: 175px;
+}
+
+.card-image-categories img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-categories .card-info-categories {
+    width: 100%;
+    height: 102px;
+}
+
+.card-categories .card-info-categories span {
     display: flex;
-    gap: 0.5rem;
+    justify-content: center;
+    padding-top: 2px;
+    width: 45px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #d9d9d9;
+    font-size: 12px;
+    margin-top: 7px;
 }
 
-.user small {
-    margin-left: 120px;
-    justify-content: flex-end;
-    color: #666;
+.card-categories .card-footer-categories {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
 }
+
+.card-title-categories {
+    font-weight: bold;
+    margin-top: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    height: 44px;
+    font-size: 16px;
+    text-align: justify;
+    font-weight: 600;
+}
+
+.card-title-categories a {
+    color: black;
+    text-decoration: none;
+}
+
+.card-footer-categories a {
+    color: black;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.card-footer-categories small {
+    margin-top: 2.5px;
+    font-size: 10px;
+}
+
+/* .card-wrapper-all-articles,
+.card-wrapper-videos {
+    margin-block: 50px;
+} */
+
+.card-desc-categories {
+    text-align: justify;
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    height: 65px;
+}
+/* End of Card With Description */
+
+/* Footer */
+footer {
+    position: absolute;
+    bottom: 0;
+}
+
+.footer-container {
+    width: 1250px;
+    margin: auto;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bxs-heart {
+    color: red;
+}
+/* End of Footer */
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    nav .navbar {
+        justify-content: space-between;
+    }
+
+    nav .navbar .logo {
+        margin-right: 0;
+    }
+
+    nav .navbar .side-open {
+        display: block;
+    }
+
+    .menu {
+        position: fixed;
+        height: 100%;
+        width: 320px;
+        left: -100%;
+        top: 0;
+        padding: 20px;
+        background-color: white;
+        z-index: 100;
+        transition: all 0.4s ease;
+    }
+
+    nav.active .menu {
+        left: -0%;
+    }
+
+    nav.active .navbar .navLogo a {
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+
+    .menu .logo-toggle {
+        display: block;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    .logo-toggle .side-close {
+        color: black;
+        font-size: 24px;
+    }
+
+    .navbar .navlink {
+        flex-direction: column;
+        padding-top: 30px;
+    }
+
+    .navlink li a {
+        display: block;
+        margin: 20px;
+    }
+}
+/* End of Responsive */

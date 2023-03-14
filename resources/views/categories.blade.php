@@ -59,7 +59,7 @@
         <div>
             <div class="wrapper">
                 <h1 class="judul-halaman">Categories</h1>
-                <h3 class="sort">sort by :</h3>
+                <!-- <h3 class="sort">sort by :</h3> -->
                 <div class="dropdown">
                     <div class="select">
                         <span class="selected"> Categories </span>

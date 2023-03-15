@@ -267,7 +267,7 @@
             </div>
         </div>
         <footer>
-            <div class="main-container">
+            <div class="footer-container">
                 <div class="footer-info">
                     <small>2023 &#169; Name.</small>
                     <small>Crafted With <i class="bx bxs-heart"></i></small>

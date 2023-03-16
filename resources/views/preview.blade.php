@@ -90,6 +90,76 @@
         
         <div class="sidebar">
             <p>Read Also: </p>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/1.jpg" alt="" />
+                        </div>
+                        <div class="card-info">
+                            <div class="card-title">
+                                <a href="/"
+                                    >Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod.</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/2.jpg" alt="" />
+                        </div>
+                        <div class="card-info">
+                            <div class="card-title">
+                                <a href="/"
+                                    >Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod.</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/1.jpg" alt="" />
+                        </div>
+                        <div class="card-info">
+                            <div class="card-title">
+                                <a href="/"
+                                    >Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod.</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/2.jpg" alt="" />
+                        </div>
+                        <div class="card-info">
+                            <div class="card-title">
+                                <a href="/"
+                                    >Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod.</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/1.jpg" alt="" />
+                        </div>
+                        <div class="card-info">
+                            <div class="card-title">
+                                <a href="/"
+                                    >Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod.</a
+                                >
+                            </div>
+                        </div>
+                    </div>
         </div>
     </div>
     

@@ -20,11 +20,9 @@ Route::get('/', function () {
 Route::get('/categories', function () {
     return view('categories');
 });
-
 Route::get('/login', function () {
     return view('login');
 });
-
 Route::get('/about', function () {
     return view('about', [
         "About" => "About.jpg",
@@ -34,7 +32,6 @@ Route::get('/about', function () {
         
     ]);
 });
-
 Route::get('/preview', function () {
     return view('preview');
 });
